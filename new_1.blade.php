@@ -10,6 +10,20 @@
 
     <body>
         <h1>Hello world!!!!</h1>
+        <p>
+            git init
+            git add .||file.php
+            git commit -m "text"
+            git status
+            git log
+            git log --oneline
+
+            git revert id_commit // :wq
+            git reset id_commit
+
+            git checkout id_commit(number) || master
+
+        </p>
     </body>
 
 </html>
