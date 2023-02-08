@@ -28,7 +28,8 @@
 
             git merge name // in to master // a + b
 
-
+            git remote add origin https://github.com/AntonKorob/s-see.git
+            git push -u origin master
 
         </p>
     </body>
