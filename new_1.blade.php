@@ -23,6 +23,10 @@
 
             git checkout id_commit(number) || master
 
+            git branch name
+            git branch -a //all
+
+
         </p>
     </body>
 
