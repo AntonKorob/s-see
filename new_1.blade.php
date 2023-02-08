@@ -13,18 +13,20 @@
         <p>
             git init
             git add .||file.php
-            git commit -m "text"
-            git status
-            git log
+            git commit -m "text" //commit
+            git status //show
+            git log // show
             git log --oneline
 
             git revert id_commit // :wq
-            git reset id_commit
+            git reset id_commit //return
 
-            git checkout id_commit(number) || master
+            git checkout id_commit(number) || master //chechout in to branch
 
-            git branch name
-            git branch -a //all
+            git branch name //create new
+            git branch -a //show all
+
+            git merge name // in to master // a + b
 
 
 
