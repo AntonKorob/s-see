@@ -16,7 +16,7 @@ use Symfony\Contracts\Service\Attribute\Required;
 */
 // get
 
-Route::get('/', function () {
+Route::get('/s-see.ru', function () {
     return view('app');
 });
 Route::get('/home', function () {
