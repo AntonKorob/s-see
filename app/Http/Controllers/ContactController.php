@@ -7,7 +7,9 @@ use App\Http\Requests\ContactRequest
 
 class ContactController extends Controller{
 
-      public function submit(ContactRequest $req){
-
+    public function login()
+  {
+    return \Socialite::with('github')->redirect();
+  }
       }
-    }
+  
