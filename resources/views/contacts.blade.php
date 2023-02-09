@@ -8,22 +8,13 @@ Contacts
 
 <!-- form-contact -->
 
-<div class="conteiner text-center p-3 m-3">
+<div class="conteiner text-center p-3 ms-5 w-75">
     <h1>Контакты</h1>
 
-    @if($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @forech(@errors->all() as $error)
-            <li>{{$error}}</li>
-            @endforech
-        </ul>
-    </div>
-    @endif
-
-    <form action="/" method="post">
+    
+    <form action="/contacts" method="post">
         @csrf
-        <div class="form-group p-3 ">
+        <div class="form-group p-3 mt-4">
             <label for="name">Введите имя : </label>
             <input class="form-control border border-info-subtle " type="text" name="name" id="name"
                 placeholder="Введите имя">

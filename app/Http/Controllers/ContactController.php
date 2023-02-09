@@ -3,13 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\ContactRequest
+use App\Http\Requests\ContactRequest;
+use App\Models\Contact;
 
-class ContactController extends Controller{
+class ContactController extends Controller
+{
 
-    public function login()
+  public function submit(Request $req)
   {
-    return \Socialite::with('github')->redirect();
+    $contact = new Contact();
+    $contact->name = $req->input('name');
+    $contact->email = $req->input('email');
+    $contact->subject = $req->input('subject');
+    $contact->message = $req->input('message');
+
+    $contact->save();
+
+    return redirect()->route('home');
   }
-      }
-  
+}

@@ -3,6 +3,8 @@
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Route;
 use Symfony\Contracts\Service\Attribute\Required;
+use App\Http\Controllers\UserController;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,5 +42,8 @@ Route::get('/login', function () {
 Route::get('/registration', function () {
     return view('registration');
 });
+Route::post('/registration', 'UserController@showe');
+Route::post('/submit', 'UserController@showe');
+
 
 // post

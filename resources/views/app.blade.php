@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
 
@@ -13,6 +14,10 @@
 </head>
 
 <body>
+    @if(Request::is('/'))
+    @include('layout.messages')
+    @endif
+
 
     <!-- navigation -->
     <div class="sticky-top" style="background-color: #b4b4b4;">
@@ -74,7 +79,8 @@
         </div>
 
         <div class="elementor-widget-container">
-            <h3><span style="color: var(--ast-global-color-2); font-size: 1.66667rem; font-style: inherit; font-weight: inherit; font-family: var( --e-global-typography-text-font-family ), Sans-serif; background-color: var(--ast-global-color-5);">пн-пт 10.00-19.00</span></h3>
+            <h3><span style="color: var(--ast-global-color-2); font-size: 1.66667rem; font-style: inherit; font-weight: inherit; font-family: var( --e-global-typography-text-font-family ), Sans-serif; background-color: var(--ast-global-color-5);">пн-пт
+                    10.00-19.00</span></h3>
             <h3>суб 10.00-16.00</h3>
         </div>
 
@@ -124,7 +130,8 @@
     <footer class="p-5 bg-secondary text-white d-inline-flex ">
 
         <p class="text-start m-2 p-3">Все права защищены. 2022. © s-see</p>
-        <p class="text-center m-2 p-3 w-50">Проектирование систем видеонаблюдение Монтаж систем видеонаблюдение Продажа оборудование для видеонаблюдения</p>
+        <p class="text-center m-2 p-3 w-50">Проектирование систем видеонаблюдение Монтаж систем видеонаблюдение
+            Продажа оборудование для видеонаблюдения</p>
         <div>
             <p class="text-end m-2">8-906-995-13-13</p>
             <p class="text-end m-2">info@s-see.ru</p>
